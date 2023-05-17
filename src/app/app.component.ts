@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'task-manager';
+
+  isExpanded = true;
+  state = 'collapsed';
+
+  toggleSidenav() {
+    this.isExpanded = !this.isExpanded;
+  }
+
 }
