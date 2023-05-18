@@ -17,7 +17,17 @@ const routes: Routes = [
         path: AppRouteEnum.Dashboard,
         loadChildren: () => import('@pages/dashboard')
           .then((m) => m.DashboardModule)
-      }
+      },
+      {
+        path: AppRouteEnum.Users,
+        loadChildren: () => import('@pages/users')
+          .then((m) => m.UsersModule)
+      },
+      {
+        path: AppRouteEnum.Settings,
+        loadChildren: () => import('@pages/settings')
+          .then((m) => m.SettingsModule)
+      },
     ]
   }
 ];

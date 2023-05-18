@@ -1,1 +1,32 @@
 @import 'bootstrap/scss/bootstrap';
+
+:root {
+    --dark-background: #1D2125;
+    --dark-background-2: #1d2125ee;
+    --dark-side-background: rgb(11 13 14 / 90%);
+    --dark-border: rgba(210, 199, 199, 0.331);
+    --dark-text: #8C9BAB;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    overflow: hidden !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

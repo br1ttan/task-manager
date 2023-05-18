@@ -1,3 +1,7 @@
-ng-sidenav-container {
+.ng-sidenav-container {
     top: 60px;
+    
+    .ng-sidenav {
+        border-right: 1px solid var(--dark-border);
+    }
 }

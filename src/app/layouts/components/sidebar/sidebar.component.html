@@ -1,1 +1,43 @@
-<p>sidebar works!</p>
+<div class="d-flex flex-column links">
+	<div class="d-flex flex-column">
+		<a 
+			class="link" 
+			[routerLink]="appRouteEnum.Dashboard" 
+			[routerLinkActive]="'active'" 
+			[routerLinkActiveOptions]="activeRouteOptions">
+			Дошки
+		</a>
+		<a 
+			class="link" 
+			[routerLink]="appRouteEnum.Users" 
+			[routerLinkActive]="'active'">
+			Учасники
+		</a>
+		<a 
+			class="link" 
+			[routerLink]="appRouteEnum.Settings" 
+			[routerLinkActive]="'active'">
+			Параметри
+		</a>
+	</div>
+
+	<div class="d-flex flex-column mt-2">
+		<div class="dashboard-title d-flex">
+			<span>Ваші дошки</span>
+		</div>
+		<div class="d-flex flex-column dashboard-list">
+			<a 
+				class="board"
+				[routerLink]="'/dashboard/board/3'" 
+				[routerLinkActive]="'active'" 
+				[routerLinkActiveOptions]="activeRouteOptions"> 
+				
+				<img class="board-img" src="https://trello-backgrounds.s3.amazonaws.com/SharedBackground/140x88/70baefb6159907a9a8cff34077a444c3/photo-1684139517679-032b7213ad2e.jpg" alt="dashboard">
+
+				<span class="board-text">
+					{{ breakText('titlesssssssssssssssssssssssssss') }}
+				</span>
+			</a>
+		</div>
+	</div>
+</div>

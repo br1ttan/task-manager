@@ -1,10 +1,11 @@
 <app-header (onButtonClick)="toggleExpand()"></app-header>
-<ng-sidenav-container>
+<ng-sidenav-container class="ng-sidenav-container">
     <ng-sidenav
+        class="ng-sidenav"
         [expanded]="isExpanded"
         [drawerWidth]="'250px'"
         [drawerWidthCollapsed]="'80px'"
-        [color]="'#202c2b'">
+        [color]="sidenavBackground">
         <app-sidebar></app-sidebar>
     </ng-sidenav>
     <ng-sidenav-content>

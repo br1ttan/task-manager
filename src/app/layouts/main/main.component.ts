@@ -7,6 +7,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MainComponent {
+  public get sidenavBackground(): string {
+    return 'rgb(11 13 14 / 90%)';
+  }
+
   public isExpanded = true;
 
   public toggleExpand(): void {
