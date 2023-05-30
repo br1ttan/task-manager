@@ -1,0 +1,21 @@
+<div cdkDropListGroup>
+  <div *ngFor="let taskContainer of arr" class="task-container">
+    <div
+      class="task-list"
+      cdkDropList
+      [cdkDropListData]="taskContainer.taskList"
+      (cdkDropListDropped)="onDrop($event)">
+      <div class="task-name">{{ taskContainer.title }}</div>
+      <div class="task-add-bar" (click)="onAppendTaskClick.emit(12)">
+        + Додати картку
+      </div>
+      <div
+        *ngFor="let task of taskContainer.taskList"
+        class="task-box"
+        cdkDrag
+        (click)="onTaskClick.emit(task)">
+        {{ task.title }}
+      </div>
+    </div>
+  </div>
+</div>

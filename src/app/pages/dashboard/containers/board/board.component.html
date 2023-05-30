@@ -1,1 +1,9 @@
-<p>board works!</p>
+<app-task (onAppendTaskClick)="open($event, modalAppender)" (onTaskClick)="open($event, modalContent)" />
+
+<ng-template  let-modal #modalContent>
+    <app-modal-content [data]="text"></app-modal-content>
+</ng-template>
+
+<ng-template  let-modal #modalAppender>
+    <app-modal-appender></app-modal-appender>
+</ng-template>
